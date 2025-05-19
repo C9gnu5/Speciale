@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        header {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* background-color: aqua; */
+            position: fixed;
+            width: 100vw;
+            height: 18vh;
+            top: 0px;
+            left: 0px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .logoTitle {
+            margin: 0px 10px;
+            padding: 0px 20px;
+            width: fit-content;
+            top: -10px;
+            position: relative;
+        }
+        .navbar {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            border: 1px solid;
+            width: 100vw;
+            padding-left: 11vw;
+            border-color: black;
+        }
+        .link {
+            border: 1px solid black;
+            width: 13vw;
+            text-align: center;
+            padding: 3px 0px;
+        }
+        .home {
+            padding: 0%;
+            margin: 1px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logoTitle">
+            <h1>Speciale Hotel</h1>
+        </div>
+            <nav class="navbar">
+                    <a class="home" href="../index.html"><img src="./assets/images/homeLogo.png" width="21px" height="21px"></a>
+                <div class="link">
+                    <a href="">Rooms</a>
+                </div>
+                <div class="link">
+                    <a href="">Amenities</a>
+                </div>
+                <div class="link">
+                    <a href="">Reserve a Room</a>
+                </div>
+                <div class="link">
+                    <a href="">Reviews</a>
+                </div>
+                <div class="link">
+                    <a href="../aboutUs.html">About Us</a>
+                </div>
+            </nav>
+      </header>
+</body>
+</html>

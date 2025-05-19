@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speciale Home</title>
+    <style>
+        body {
+            padding-top: 18vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1>Main Page</h1>
+    </main>
+
+    <div id="footer"></div>
+</body>
+<script type="module">
+    import { loadHTML } from './assets/htmlLoader.js';
+    document.addEventListener('DOMContentLoaded', () => {
+        loadHTML('header', './assets/header.html');
+        loadHTML('footer', './assets/footer.html')
+    });
+</script>
+</html>
