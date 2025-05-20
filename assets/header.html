@@ -12,11 +12,12 @@
             width: 100vw;
             height: 18vh;
             top: 0px;
-            left: 0px;
+            left: -1px;
         }
         a {
             text-decoration: none;
             font-size: 1em;
+            color: black;
         }
         .logoTitle {
             margin: 0px 10px;
@@ -40,6 +41,15 @@
             text-align: center;
             padding: 3px 0px;
         }
+        .link:hover {
+            background-color: #555555;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .link:hover a {
+            color: white;
+            transition: 0.3s;
+        }
         .home {
             padding: 0%;
             margin: 1px 10px;
@@ -53,19 +63,19 @@
         </div>
             <nav class="navbar">
                     <a class="home" href="../index.html"><img src="./assets/images/homeLogo.png" width="21px" height="21px"></a>
-                <div class="link">
-                    <a href="">Rooms</a>
+                <div class="link" onclick="location.href='../rooms.html';">
+                    <a href="../rooms.html">Rooms</a>
                 </div>
-                <div class="link">
-                    <a href="">Amenities</a>
+                <div class="link" onclick="location.href='../amenities.html';">
+                    <a href="../amenities.html">Amenities</a>
                 </div>
-                <div class="link">
-                    <a href="">Reserve a Room</a>
+                <div class="link" onclick="location.href='../reservation.html';">
+                    <a href="../reservation.html">Reserve a Room</a>
                 </div>
-                <div class="link">
-                    <a href="">Reviews</a>
+                <div class="link" onclick="location.href='../reviews.html';">
+                    <a href="../reviews.html">Reviews</a>
                 </div>
-                <div class="link">
+                <div class="link" onclick="location.href='../aboutUs.html';">
                     <a href="../aboutUs.html">About Us</a>
                 </div>
             </nav>

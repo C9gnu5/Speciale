@@ -6,16 +6,90 @@
     <title>Speciale Home</title>
     <style>
         body {
-            padding-top: 18vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            margin: 0px;
+            border: 1px solid blue;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 11vh;
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+        }
+        .pageTitle {
+            width: 80%;
+            height: 20vh;
+            border: 1px solid green;
+            background-color: green;
+        }
+        .content {
+            width: 80%;
+            height: 15vh;
+            border: 1px solid orange;
+            background-color: grey;
+            border-style: solid none solid none;
+        }
+        .content:hover {
+            background-color: lightgray;
+            width: 100%;
+            transform: scale(1.05);
+            transition: 0.1s;
         }
     </style>
 </head>
 <body>
     <div id="header"></div>
 
-    <main>
-        <h1>Main Page</h1>
+    <main class="main">
+        <div class="pageTitle">
+            <h1>Main Page</h1>
+        </div>
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+        
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+      
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+      
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+      
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+    
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+    
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
+    
+        <div class="content">
+            <p>Welcome to the Speciale Hotel!</p>
+            <p>Explore our rooms, amenities, and make a reservation.</p>
+        </div>
     </main>
 
     <div id="footer"></div>
