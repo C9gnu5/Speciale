@@ -7,12 +7,13 @@
     <style>
         header {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            /* background-color: aqua; */
+            background-color: #2C3E50;
             position: fixed;
             width: 100vw;
             height: 18vh;
             top: 0px;
             left: -1px;
+            z-index: 1000;
         }
         a {
             text-decoration: none;
@@ -27,22 +28,24 @@
             position: relative;
         }
         .navbar {
-            position: absolute;
             display: flex;
             align-items: center;
-            border: 1px solid;
             width: 100vw;
             padding-left: 11vw;
-            border-color: black;
+            background-color: #2596BE;
         }
         .link {
-            border: 1px solid black;
             width: 13vw;
-            text-align: center;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 3px 0px;
+            border: 1px #35c9ff;
+            border-style: none solid none solid;
         }
         .link:hover {
-            background-color: #555555;
+            background-color: #165b74;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -52,7 +55,7 @@
         }
         .home {
             padding: 0%;
-            margin: 1px 10px;
+            margin: 2px 10px 0px 10px;
         }
     </style>
 </head>
