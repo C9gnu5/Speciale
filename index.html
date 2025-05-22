@@ -13,8 +13,9 @@
             border: 1px solid black;
             border-style: solid none none none;
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             text-align: left;
+            align-items: center;
         }
         .content img {
             width: 20%;
@@ -23,11 +24,13 @@
             border-radius: 10px;
         }
         .content:hover {
-            background-color: #fff0a5;
+            background-color: #444444;
+            color: white;
             width: 95%;
             border-style: solid none solid none;
             transform: scale(1.05);
             transition: 0.1s;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -39,15 +42,29 @@
             <h1>WELCOME<br>To Speciale Hotel</h1>
         </div>
 
-        <div class="content">
-            <img src="./assets/images/room.jpg">
-            <p>Welcome to the Speciale Hotel!
-                <br>Explore our rooms, amenities, and make a reservation.</p>
+        <div class="content" onclick="location.href='./rooms.html'">
+            <img src="./assets/images/room.jpg" alt="Hotel Rooms">
+            <p>Explore our diverse range of comfortable and luxurious rooms, tailored to make your stay unforgettable. Find the perfect retreat for your needs.</p>
         </div>
         
-        <div class="content">
-            <p>Welcome to the Speciale Hotel!</p>
-            <p>Explore our rooms, amenities, and make a reservation.</p>
+        <div class="content" onclick="location.href='./amenities.html'">
+            <img src="./assets/images/5.jpg" alt="Hotel Amenities">
+            <p>Discover the exceptional amenities we offer to enhance your stay, from refreshing pools to state-of-the-art fitness centers and exquisite dining options.</p>
+        </div>
+
+        <div class="content" onclick="location.href='./reservation.html'">
+            <img src="./assets/images/reserve.png" alt="Reservation">
+            <p>Ready to book your stay? Make a reservation easily and securely through our online booking system. We look forward to welcoming you.</p>
+        </div>
+
+        <div class="content" onclick="location.href='./reviews.html'">
+            <img src="./assets/images/reviews.png" alt="Customer Reviews">
+            <p>Hear what our guests have to say about their experiences at Speciale Hotel. Read authentic reviews and testimonials from satisfied visitors.</p>
+        </div>
+
+        <div class="content" onclick="location.href='./aboutUs.html'">
+            <img src="./assets/images/specialeLogo.png" alt="About Us">
+            <p>Learn more about Speciale Hotel, our history, our mission, and what makes us a unique destination. Discover the story behind our hospitality.</p>
         </div>
       
     </main>

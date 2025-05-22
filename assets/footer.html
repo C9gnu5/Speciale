@@ -4,46 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         footer {
+            font-family: 'Montserrat', sans-serif;
             display: flex;
             width: 98.8vw;
             height: 100%;
             margin: 0px;
-            background-color: #7F2736;
+            background-color: #333333;
         }
         .section {
             display: flex;
             flex-direction: column;
             text-align: left;
-            padding: 3% 0% 1% 10%;
+            justify-content: center;
+            padding: 0% 0% 2% 10%;
             width: 33.3%;
-            color: #ffe5e9;
+            color: #F8F8F8;
+            gap: 15px;
         }
         .section a {
-            color: #ffe5e9;
+            color: #F8F8F8;
         }
         .section a:hover {
             text-decoration: underline;
             transform: scale(1.01);
         }
         .logo {
+            mix-blend-mode: difference;
             border-radius: 10px;
-            mix-blend-mode: multiply;
             transition: 0.10s;
         }
         .logo:hover {
             cursor: pointer;
             mix-blend-mode: normal;
-            box-shadow: 10px 10px 10px black;
+            box-shadow: 10px 10px 10px #888888;
             transform: scale(1.01);
         }
-        .subsec {
+        .subSec {
             display: flex;
-        }
-        .fb {
-            width: 30px;
+            align-items: center;
+            flex-wrap: nowrap;
             height: 30px;
+        }
+        .subSec img {
+            width: 25px;
+            height: 25px;
+            margin: 0px 10px 0px 0px;
         }
     </style>
 </head>
@@ -56,31 +64,32 @@
         <div class="section">
             <h2>Site Navigation</h2>
             <a href="../aboutUs.html">About Us</a>
-            <br>
             <a href="../rooms.html">Rooms</a>
-            <br>
             <a href="../amenities.html">Amenities and Facilities</a>
-            <br>
             <a href="../reservation.html">Reserve a Room</a>
-            <br>
             <a href="../reviews.html">Reviews</a>
         </div>
 
         <div class="section">
             <h2>Reach Us</h2>
             <div class="subSec">
-                <p>Market Avenue, Rosario, Philippines, 4106</p>
+                <img src="./assets/images/pinpoint.png">
+                <p>Speciale Hotel, Market Avenue, Rosario, Philippines, 4106</p>
             </div>
+
             <div class="subSec">
+                <img src="./assets/images/call-logo.png" alt="Phone Logo" title="Phone Logo">
                 <p>0915 054 9886</p>
             </div>
-            <br>
+
             <div class="subSec">
+                <img src="./assets/images/email-logo.png" alt="Email Logo" title="Email Logo">
                 <a href="mailto:specialehotelcorp@gmail.com">specialehotelcorp@gmail.com</a>
             </div>
-            <br>
+
             <div class="subSec">
-                <a href="https://www.facebook.com/specialeph"><img src="./assets/images/fbLogo.png" class="fb"></a>
+                <img src="./assets/images/fb-logo.png" alt="FB Logo" title="FB Logo" width="25px" height="25px">
+                <a href="https://www.facebook.com/specialeph">SpecialePH</a>
             </div>
         </div>
     </footer>

@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speciale Amenities</title>
-    <link rel="stylesheet" href="./assets/commonCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/commonStyle.css">
     <style>
-        
+        .content {
+            width: 80%;
+            padding: 2% 0%;
+            border: 1px solid black;
+            border-style: solid none none none;
+            font-size: 1.3em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px;    
+        }
+        .scroll {
+            width: 80%;
+            padding: 2% 0%;
+            overflow: hidden;
+            white-space: nowrap;
+            border: 1px solid black;
+            border-style: solid none none none;
+        }
+        .carousel {
+            display: inline-block;
+            animation: scroll-left 20s linear infinite;
+        }
+        .carousel img {
+            width: 30%;
+            height: auto;
+            margin: 0px 20px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 8px;
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .carousel img:hover {
+            transform: scale(1.02);
+            transition: 0.03s;
+        }
+        .amenity-column {
+            flex: 1 1 250px;
+            min-width: 200px;
+        }
+            .amenity-column h3, .amenity-column h4 {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+            .amenity-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+            .amenity-column li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+            .amenity-column p {
+            font-size: 14px;
+            margin: 6px 0 12px;
+        }
     </style>
 </head>
 <body>
@@ -14,25 +78,90 @@
 
     <main class="main">
         <div class="pageHead">
-            <img src="./assets/images/specialeLogo.png" width="140" height="46">
             <div class="pageTitle">
-                <h1>Amenities and<br>Facilities</h1>
+                <h1>SPECIALE<br>Amenities & facilities</h1>
             </div>
-            <img src="./assets/images/specialeLogo.png" width="140" height="46">
+        </div>
+        
+        <div class="scroll">
+            <div class="carousel">
+                <img src="./assets/images/1.jpg">
+                <img src="./assets/images/2.jpg">
+                <img src="./assets/images/3.jpg">
+                <img src="./assets/images/4.jpg">
+                <img src="./assets/images/5.jpg">
+                <img src="./assets/images/6.jpg">
+                <img src="./assets/images/7.jpg">
+                <img src="./assets/images/1.jpg">
+                <img src="./assets/images/2.jpg">
+                <img src="./assets/images/3.jpg">
+                <img src="./assets/images/4.jpg">
+                <img src="./assets/images/5.jpg">
+                <img src="./assets/images/6.jpg">
+                <img src="./assets/images/7.jpg">
+            </div>
         </div>
         
         <div class="content">
-            <p>For guests who delight in individuality and authenticity, Iconic Luxury Hotels is a collection of distinctively different, historic hotels that all have rich and fascinating stories to tell. It’s our stories that make our hotels iconic and our people are the enthused narrators and interpreters of those stories.</p>
-        </div>
-        
-        <div class="content">
-            <p>Our hotels each have their own stories, traditions and character that mark them out as unique. This individuality brings our collection together.
-Our team take cues as to the level of service each guest expects. Familiar, chatty or more reserved. Our distinct character is reflected both in service levels and the environment.
-Everything we do is instinctive and insightful, creating an emotional connection with each guest.</p>
-        </div>
-      
-        <div class="content">
-            <p>We welcome our guests into a world that is at once familiar yet forward-looking, and we introduce our international guests to an environment that is both exotic and contemporary, with a level of service that will come as a surprise the first time it is experienced, and then an experience to look forward to the next time.</p>
+            <div class="amenity-column">
+                <h3>Great for your stay</h3>
+                <ul>
+                    <li>✔️ Air conditioning</li>
+                    <li>✔️ Parking</li>
+                    <li>✔️ Free Wifi</li>
+                    <li>✔️ Room service</li>
+                    <li>✔️ Free parking</li>
+                    <li>✔️ Non-smoking rooms</li>
+                </ul>
+                <h4>Bathroom</h4>
+                <ul>
+                    <li>🛁 Hairdryer</li>
+                </ul>
+                <h4>Living Area</h4>
+                <ul>
+                    <li>🛋️ Sitting area</li>
+                </ul>
+            </div>
+
+            <div class="amenity-column">
+                <h3>Media & Technology</h3>
+                <ul>
+                    <li>✔️ Telephone</li>
+                    <li>✔️ TV</li>
+                </ul>
+                <h4>Internet</h4>
+                <p>📶 Wifi is available in all areas and is free of charge.</p>
+
+                <h4>Parking</h4>
+                <p>🅿️ Free public parking is available on site (reservation is not needed).</p>
+
+                <h4>Services</h4>
+                <ul>
+                    <li>✔️ Daily housekeeping</li>
+                    <li>✔️ Room service</li>
+                </ul>
+            </div>
+
+            <div class="amenity-column">
+                <h3>Safety & security</h3>
+                <ul>
+                    <li>✔️ Fire extinguishers</li>
+                    <li>✔️ CCTV in common areas</li>
+                    <li>✔️ Key access</li>
+                </ul>
+
+                <h4>General</h4>
+                <ul>
+                    <li>✔️ Non-smoking rooms</li>
+                    <li>✔️ Air conditioning</li>
+                </ul>
+
+                <h4>Languages Spoken</h4>
+                <ul>
+                    <li>✔️ English</li>
+                    <li>✔️ Filipino</li>
+                </ul>
+            </div>
         </div>
     </main>
 
